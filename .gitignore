@@ -15,3 +15,19 @@ buildNumber.properties
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/gulimall.iml
+.idea/jarRepositories.xml
+.idea/misc.xml
+.idea/vcs.xml
+.idea/workspace.xml
+gulimall-coupon/src/test/java/com/atguigu/gulimall/AppTest.java
+gulimall-member/src/test/java/com/atguigu/gulimall/AppTest.java
+gulimall-order/src/test/java/com/atguigu/gulimall/AppTest.java
+gulimall-product/src/test/java/com/atguigu/gulimall/AppTest.java
+gulimall-ware/src/test/java/com/atguigu/gulimall/AppTest.java
+gulimall-product/src/test/java/com/atguigu/gulimall/AppTest.java
+gulimall-ware/src/test/java/com/atguigu/gulimall/AppTest.java
+gulimall-product/src/test/java/com/atguigu/gulimall/AppTest.java
+gulimall-product/src/test/java/com/atguigu/gulimall/AppTest.java
