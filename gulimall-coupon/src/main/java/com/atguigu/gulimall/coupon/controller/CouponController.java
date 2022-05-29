@@ -25,7 +25,7 @@ import com.atguigu.common.utils.R;
  * @date 2022-05-29 12:33:43
  */
 @RestController
-@RequestMapping("coupon/coupon")
+@RequestMapping("/coupon/coupon")
 public class CouponController {
     @Autowired
     private CouponService couponService;
