@@ -2,6 +2,7 @@ package com.atguigu.gulimall.product.controller;
 
 import java.util.Arrays;
 import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,7 +22,7 @@ import com.atguigu.common.utils.R;
  *
  * @author Jason
  * @email jason_team@163.com
- * @date 2022-05-29 01:26:51
+ * @date 2022-05-29 17:37:58
  */
 @RestController
 @RequestMapping("product/categorybrandrelation")
@@ -33,6 +34,7 @@ public class CategoryBrandRelationController {
      * 列表
      */
     @RequestMapping("/list")
+   // @RequiresPermissions("product:categorybrandrelation:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = categoryBrandRelationService.queryPage(params);
 
@@ -44,6 +46,7 @@ public class CategoryBrandRelationController {
      * 信息
      */
     @RequestMapping("/info/{id}")
+    // @RequiresPermissions("product:categorybrandrelation:info")
     public R info(@PathVariable("id") Long id){
 		CategoryBrandRelationEntity categoryBrandRelation = categoryBrandRelationService.getById(id);
 
@@ -54,6 +57,7 @@ public class CategoryBrandRelationController {
      * 保存
      */
     @RequestMapping("/save")
+    // @RequiresPermissions("product:categorybrandrelation:save")
     public R save(@RequestBody CategoryBrandRelationEntity categoryBrandRelation){
 		categoryBrandRelationService.save(categoryBrandRelation);
 
@@ -64,6 +68,7 @@ public class CategoryBrandRelationController {
      * 修改
      */
     @RequestMapping("/update")
+    // @RequiresPermissions("product:categorybrandrelation:update")
     public R update(@RequestBody CategoryBrandRelationEntity categoryBrandRelation){
 		categoryBrandRelationService.updateById(categoryBrandRelation);
 
@@ -74,6 +79,7 @@ public class CategoryBrandRelationController {
      * 删除
      */
     @RequestMapping("/delete")
+    // @RequiresPermissions("product:categorybrandrelation:delete")
     public R delete(@RequestBody Long[] ids){
 		categoryBrandRelationService.removeByIds(Arrays.asList(ids));
 
