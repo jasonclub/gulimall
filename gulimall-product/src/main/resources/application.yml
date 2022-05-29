@@ -6,12 +6,6 @@ spring:
     password: root
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 192.168.0.52:8848
-  application:
-    name: gulimall-product
 server:
   port: 10000
 
